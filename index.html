@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+    <!-- VUE JS -->
 </head>
 
 <body>
@@ -110,259 +112,52 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
+
+            <!-- VUE APP -->
+            <div id="app" class="row">
+                    <div class="col-xl-4 col-md-6 col-lg-4" v-for="propiedad in propiedadesHome">
+                        <div class="single_property">
+                            <div class="property_thumb">
+                                <div class="property_tag">
+                                        En Venta
+                                </div>
+                                <img v-bind:src="propiedad.imagen" alt="">
                             </div>
-                            <img src="img/property/1.png" alt="">
+                            <div class="property_content">
+                                <div class="main_pro">
+                                        <h3><a href="#">{{propiedad.direccion}}</a></h3>
+                                        <div class="mark_pro">
+                                            <img src="img/svg_icon/location.svg" alt="">
+                                            <span>{{propiedad.barrio}}</span>
+                                        </div>
+                                        <span class="amount">u$d {{propiedad.valor}}</span>
+                                </div>
+                            </div>
+                            <div class="footer_pro">
+                                    <ul>
+                                        <li>
+                                            <div class="single_info_doc">
+                                                <img src="img/svg_icon/square.svg" alt="">
+                                                <span>1200 Sqft</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="single_info_doc">
+                                                <img src="img/svg_icon/bed.svg" alt="">
+                                                <span>2 Bed</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="single_info_doc">
+                                                <img src="img/svg_icon/bath.svg" alt="">
+                                                <span>2 Bath</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                         </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
                     </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag red">
-                                    For Rent
-                            </div>
-                            <img src="img/property/2.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">$563/month</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
-                            </div>
-                            <img src="img/property/3.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag red">
-                                    For Rent
-                            </div>
-                            <img src="img/property/4.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">$563/month</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
-                            </div>
-                            <img src="img/property/5.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
-                            </div>
-                            <img src="img/property/6.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
+
             </div>
             <div class="row">
                 <div class="col-xl-12">
@@ -381,6 +176,7 @@
             <div class="row">   
                 <div class="col-xl-12">
                     <div class="home_details_active owl-carousel">
+
                         <div class="single_details">
                             <div class="row">
                                 <div class="col-xl-6 col-md-6">
@@ -413,6 +209,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="single_details">
                             <div class="row">
                                 <div class="col-xl-6 col-md-6">
@@ -445,6 +242,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="single_details">
                             <div class="row">
                                 <div class="col-xl-6 col-md-6">
@@ -477,6 +275,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="single_details">
                             <div class="row">
                                 <div class="col-xl-6 col-md-6">
@@ -509,6 +308,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="single_details">
                             <div class="row">
                                 <div class="col-xl-6">
@@ -541,6 +341,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
 
                 </div>
@@ -774,6 +575,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('#slider').slider('values', 1) +
             'k</span>');
+    </script>
+
+    <!-- VUE JS -->
+    <script src="js/propiedades.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                propiedades: propiedades,
+            },
+            computed: {
+                propiedadesHome: function() {
+                    return propiedades.slice(0,6)
+                }
+            }
+        })
     </script>
 </body>
 
