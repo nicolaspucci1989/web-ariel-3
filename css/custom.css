@@ -33,3 +33,7 @@ body > div.slider_area > div > div > div > div > div.slider_text.text-center.jus
 #app > div.home_details > div > div > div > div > div.owl-stage-outer > div > div.owl-item.active > div > div > div > div > div > div.info_content > div > span {
     color: #FDAE5C;
 }
+
+.home_details {
+    background-image: url('../img/home_details2.jpg');
+}
