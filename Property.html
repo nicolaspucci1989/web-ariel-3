@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 
@@ -38,39 +39,6 @@
     <!-- header-start -->
     <header>
         <div class="header-area ">
-            <div class="header-top_area d-none d-lg-block">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-md-5 ">
-                            <div class="header_left">
-                                <p>Welcome to Conbusi consulting service</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-7 col-md-7">
-                            <div class="header_right d-flex">
-                                    <div class="short_contact_list">
-                                            <ul>
-                                                <li><a href="#"> <i class="fa fa-envelope"></i> info@docmed.com</a></li>
-                                                <li><a href="#"> <i class="fa fa-phone"></i> 1601-609 6780</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="social_media_links">
-                                            <a href="#">
-                                                <i class="fa fa-linkedin"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="fa fa-facebook"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="fa fa-google-plus"></i>
-                                            </a>
-                                        </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div id="sticky-header" class="main-header-area">
                 <div class="container">
                     <div class="header_bottom_border">
@@ -78,7 +46,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="img/logo2.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -86,36 +54,18 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a  href="index.html">home</a></li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <li><a class="active" href="index.html">home</a></li>
+                                            <li><a href="#">propiedades <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                        <li><a href="about.html">about</a></li>
-                                                        <li><a href="property_details.html">property details</a></li>
-                                                        <li><a href="elements.html">elements</a></li>
+                                                        <li><a href="about.html">compra</a></li>
+                                                        <li><a href="property_details.html">venta</a></li>
+                                                        <li><a href="elements.html">alquiler</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="active" href="Property.html">Property</a></li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="Property.html">inversiones</a></li>
+                                            <li><a href="contact.html">Contacto</a></li>
                                         </ul>
                                     </nav>
-                                </div>
-                            </div>
-                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                <div class="Appointment">
-                                    <div class="search_btn">
-                                        <a href="#">
-                                            <i class="ti-search"></i>
-                                        </a>
-                                    </div>
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a  href="#">Add Property</a>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -132,98 +82,99 @@
 
     <!-- slider_area_start -->
     <div class="slider_area">
-            <div class="single_slider single_slider2  d-flex align-items-center property_bg overlay2">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-10 offset-xl-1">
-                                <div class="property_wrap">
-                                        <div class="slider_text text-center justify-content-center">
-                                                <h3>Search property</h3>
-                                            </div>
-                                            <div class="property_form">
-                                                <form action="#">
-                                                    <div class="row">
-                                                        <div class="col-xl-12">
-                                                            <div class="form_wrap d-flex">
-                                                                    <div class="single-field max_width ">
-                                                                            <label for="#">Location</label>
-                                                                            <select class="wide" >
-                                                                                    <option data-display="NewYork">NewYork</option>
-                                                                                    <option value="1">Bangladesh</option>
-                                                                                    <option value="2">India</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    <div class="single-field max_width ">
-                                                                            <label for="#">Property type</label>
-                                                                            <select class="wide" >
-                                                                                    <option data-display="Apartment">Apartment</option>
-                                                                                    <option value="1">Apartment</option>
-                                                                                    <option value="2">Apartment</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="single_field range_slider">
-                                                                                <label for="#">Price ($)</label>
-                                                                            <div id="slider"></div>
-                                                                        </div>
-                                                                    <div class="single-field min_width ">
-                                                                            <label for="#">Bed Room</label>
-                                                                            <select class="wide" >
-                                                                                    <option data-display="01">01</option>
-                                                                                    <option value="1">02</option>
-                                                                                    <option value="2">03</option>
-                                                                            </select>
-                                                                        </div>
-                                                                    <div class="single-field min_width ">
-                                                                            <label for="#">Bath Room</label>
-                                                                            <select class="wide" >
-                                                                                    <option data-display="01">01</option>
-                                                                                    <option value="1">02</option>
-                                                                                    <option value="2">03</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="serach_icon">
-                                                                                <a href="#">
-                                                                                        <i class="ti-search"></i>
-                                                                                </a>
-                                                                            </div>
-                                                            </div>
+        <div class="single_slider single_slider2  d-flex align-items-center property_bg overlay2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="property_wrap">
+                            <div class="slider_text text-center justify-content-center">
+                                    <h3>Buscar Propiedad</h3>
+                            </div>
+                            <div class="property_form">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="form_wrap d-flex">
+                                                    <div class="single-field max_width ">
+                                                            <label for="#">Location</label>
+                                                            <select class="wide" >
+                                                                    <option data-display="NewYork">NewYork</option>
+                                                                    <option value="1">Bangladesh</option>
+                                                                    <option value="2">India</option>
+                                                            </select>
                                                         </div>
-                                                    </div>
-                                                </form>
+                                                    <div class="single-field max_width ">
+                                                            <label for="#">Property type</label>
+                                                            <select class="wide" >
+                                                                    <option data-display="Apartment">Apartment</option>
+                                                                    <option value="1">Apartment</option>
+                                                                    <option value="2">Apartment</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="single_field range_slider">
+                                                                <label for="#">Price ($)</label>
+                                                            <div id="slider"></div>
+                                                        </div>
+                                                    <div class="single-field min_width ">
+                                                            <label for="#">Bed Room</label>
+                                                            <select class="wide" >
+                                                                    <option data-display="01">01</option>
+                                                                    <option value="1">02</option>
+                                                                    <option value="2">03</option>
+                                                            </select>
+                                                        </div>
+                                                    <div class="single-field min_width ">
+                                                            <label for="#">Bath Room</label>
+                                                            <select class="wide" >
+                                                                    <option data-display="01">01</option>
+                                                                    <option value="1">02</option>
+                                                                    <option value="2">03</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="serach_icon">
+                                                                <a href="#">
+                                                                        <i class="ti-search"></i>
+                                                                </a>
+                                                            </div>
                                             </div>
-                                </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </div>
     <!-- slider_area_end -->
-    <div class="popular_property plus_padding">
+    <div id="app" class="popular_property plus_padding">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title mb-40 text-center">
-                        <h4>240 Properties found</h4>
+                        <h4>{{cantidadProp}} Propiedades encontradas</h4>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-4 col-md-6 col-lg-4">
+
+                <div class="col-xl-4 col-md-6 col-lg-4" v-for="propiedad in propiedades">
                     <div class="single_property">
                         <div class="property_thumb">
                             <div class="property_tag">
-                                    For Sale
+                                    En Venta
                             </div>
-                            <img src="img/property/1.png" alt="">
+                            <img v-bind:src="propiedad.imagen" alt="">
                         </div>
                         <div class="property_content">
                             <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
+                                    <h3><a href="#">{{propiedad.direccion}}</a></h3>
                                     <div class="mark_pro">
                                         <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
+                                        <span>{{propiedad.barrio}}</span>
                                     </div>
-                                    <span class="amount">From $20k</span>
+                                    <span class="amount">u$d {{propiedad.valor}}</span>
                             </div>
                         </div>
                         <div class="footer_pro">
@@ -250,223 +201,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag red">
-                                    For Rent
-                            </div>
-                            <img src="img/property/2.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">$563/month</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
-                            </div>
-                            <img src="img/property/3.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag red">
-                                    For Rent
-                            </div>
-                            <img src="img/property/4.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">$563/month</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
-                            </div>
-                            <img src="img/property/5.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 col-lg-4">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    For Sale
-                            </div>
-                            <img src="img/property/6.png" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">Comfortable Apartment in Palace</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>Popular Properties</span>
-                                    </div>
-                                    <span class="amount">From $20k</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Sqft</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Bed</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Bath</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="more_property_btn text-center">
-                        <a href="#" class="boxed-btn3-line">More Properties</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -477,13 +212,13 @@
             <div class="row">
                 <div class="col-xl-7">
                     <div class="action_heading">
-                        <h3>Add your property for sale</h3>
+                        <h3>Vende tu propiedad</h3>
                     </div>
                 </div>
                 <div class="col-xl-5">
                     <div class="call_add_action">
-                        <span>+10 637 367 4567</span>
-                        <a href="#" class="boxed-btn3-line">Load More</a>
+                        <span>+54 9 11 5843 0937</span>
+                        <a href="https://wa.me/5491158430937?text=Quiero%20vender%20mi%20propiedad" target="_blank" class="boxed-btn3-line">Quiero Vender</a>
                     </div>
                 </div>
             </div>
@@ -491,23 +226,21 @@
     </div>
     <!-- /contact_action_area  -->
 
-
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
-                                    <img src="img/footer_logo.png" alt="">
+                                    <img src="img/footer_logo2.png" alt="">
                                 </a>
                             </div>
                             <p>
-                                    <a href="#">conbusi@support.com</a> <br>
-                                    +10 873 672 6782 <br>
-                                    600/D, Green road, NewYork
+                                    <a href="#">contacto@aspropiedades.com</a> <br>
+                                    +54 9 11 5843 0937<br>
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -534,7 +267,7 @@
                     <div class="col-xl-2 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                    Services
+                                    Servicios
                             </h3>
                             <ul>
                                 <li><a href="#">Marketing & SEO</a></li>
@@ -549,7 +282,7 @@
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                    Useful Links
+                                    Enlaces &Uacutetiles
                             </h3>
                             <ul>
                                 <li><a href="#">About</a></li>
@@ -558,18 +291,6 @@
                                 <li><a href="#">Appointment</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 col-lg-4">
-                            <div class="footer_widget">
-                                    <h3 class="footer_title">
-                                            Subscribe
-                                    </h3>
-                                    <form action="#" class="newsletter_form">
-                                        <input type="text" placeholder="Enter your mail">
-                                        <button type="submit">Subscribe</button>
-                                    </form>
-                                    <p class="newsletter_text">Esteem spirit temper too say adieus who direct esteem esteems luckily.</p>
-                                </div>
                     </div>
                 </div>
             </div>
@@ -580,9 +301,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            AS Propiedades &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados
                         </p>
                     </div>
                 </div>
@@ -592,7 +311,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!--/ footer end  -->
 
     <!-- link that opens popup -->
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
 
@@ -617,9 +336,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/plugins.js"></script>
     <!-- <script src="js/gijgo.min.js"></script> -->
     <script src="js/slick.min.js"></script>
-   
 
-    
+
+
     <!--contact js-->
     <script src="js/contact.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
@@ -642,14 +361,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 return false;
             return true;
         }
-        // Fetch Url value 
+        // Fetch Url value
         var getQueryString = function (parameter) {
             var href = window.location.href;
             var reg = new RegExp('[?&]' + parameter + '=([^&#]*)', 'i');
             var string = reg.exec(href);
             return string ? string[1] : null;
         };
-        // End url 
+        // End url
         // // slider call
         $('#slider').slider({
             range: true,
@@ -695,6 +414,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
         $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('#slider').slider('values', 1) +
             'k</span>');
+    </script>
+
+    <!-- VUE JS -->
+    <script src="js/propiedades.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                propiedades: propiedades,
+            },
+            computed: {
+                cantidadProp: function(){
+                    return this.propiedades.length;
+                }
+            }
+        })
     </script>
 </body>
 
