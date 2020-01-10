@@ -1,3 +1,4 @@
+/* Header */
 #whatsapp {
     background-image: linear-gradient(180deg,#60d66a 0,#20b038);;
     color: #fff;
@@ -18,4 +19,13 @@
   
 #whatsapp:hover {
     background-image: linear-gradient(180deg,#20b038 0,#29bb41)
+}
+
+body > div.slider_area,
+.slider_area .single_slider {
+    height: 100vh;
+}
+
+body > div.slider_area > div > div > div > div > div.slider_text.text-center.justify-content-center {
+    margin-top: 0;
 }
