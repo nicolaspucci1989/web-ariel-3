@@ -29,3 +29,7 @@ body > div.slider_area,
 body > div.slider_area > div > div > div > div > div.slider_text.text-center.justify-content-center {
     margin-top: 0;
 }
+
+#app > div.home_details > div > div > div > div > div.owl-stage-outer > div > div.owl-item.active > div > div > div > div > div > div.info_content > div > span {
+    color: #FDAE5C;
+}

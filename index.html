@@ -91,7 +91,7 @@
                             <div class="col-xl-10 offset-xl-1">
                                 <div class="slider_text text-center justify-content-center">
                                     <h3>Encontr&aacute tu Lugar en el Mundo</h3>
-                                    <a id="whatsapp" href="" target="_blank"><i class="fab fa-whatsapp fa-md"></i> <span>Cont&aacutectenos</span></a>
+                                    <a id="whatsapp" href="https://wa.me/5491158430937?text=Quiero%20comprar%20una%20propiedad" target="_blank"><i class="fab fa-whatsapp fa-md"></i> <span>Cont&aacutectenos</span></a>
                                 </div>
                                 <div class="col-xl-10 offset-xl-1">
                                 </div>
@@ -102,254 +102,256 @@
     </div>
     <!-- slider_area_end -->
 
-    <!-- popular_property  -->
-    <div class="popular_property">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-40 text-center">
-                        <h3>Propiedades</h3>
+    <!-- VUE JS APP -->
+    <div id="app">
+        <!-- popular_property  -->
+        <div class="popular_property">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="section_title mb-40 text-center">
+                            <h3>Propiedades</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="col-xl-4 col-md-6 col-lg-4" v-for="propiedad in propiedadesHome">
+                            <div class="single_property">
+                                <div class="property_thumb">
+                                    <div class="property_tag">
+                                            En Venta
+                                    </div>
+                                    <img v-bind:src="propiedad.imagen" alt="">
+                                </div>
+                                <div class="property_content">
+                                    <div class="main_pro">
+                                            <h3><a href="#">{{propiedad.direccion}}</a></h3>
+                                            <div class="mark_pro">
+                                                <img src="img/svg_icon/location.svg" alt="">
+                                                <span>{{propiedad.barrio}}</span>
+                                            </div>
+                                            <span class="amount">u$d {{propiedad.valor}}</span>
+                                    </div>
+                                </div>
+                                <div class="footer_pro">
+                                        <ul>
+                                            <li>
+                                                <div class="single_info_doc">
+                                                    <img src="img/svg_icon/square.svg" alt="">
+                                                    <span>1200 Sqft</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single_info_doc">
+                                                    <img src="img/svg_icon/bed.svg" alt="">
+                                                    <span>2 Bed</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="single_info_doc">
+                                                    <img src="img/svg_icon/bath.svg" alt="">
+                                                    <span>2 Bath</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="more_property_btn text-center">
+                            <a href="#" class="boxed-btn3-line">Ver Mas</a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- /popular_property  -->
+        
+        <!-- home_details  -->
+        <div class="home_details">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-xl-12">
+                        <div class="home_details_active owl-carousel">
 
-            <!-- VUE APP -->
-            <div id="app" class="row">
-                    <div class="col-xl-4 col-md-6 col-lg-4" v-for="propiedad in propiedadesHome">
-                        <div class="single_property">
-                            <div class="property_thumb">
-                                <div class="property_tag">
-                                        En Venta
+                            <div class="single_details" v-for="propiedad in propiedadesHome">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                            <div class="modern_home_info">
+                                                    <div class="modern_home_info_inner">
+                                                        <span class="for_sale">
+                                                            En Venta
+                                                        </span>
+                                                        <div class="info_header">
+                                                                <h3>Blue haven modern home</h3>
+                                                                <div class="popular_pro d-flex">
+                                                                    <img src="img/svg_icon/location.svg" alt="">
+                                                                    <span>{{propiedad.barrio}}</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="info_content">
+                                                            <ul>
+                                                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
+                                                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
+                                                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
+                                                            </ul>
+                                                            <p>{{propiedad.descripcion}}</p>
+                                                            <div class="prise_view_details d-flex justify-content-between align-items-center">
+                                                                <span>u$d {{propiedad.valor}}</span>
+                                                                <a class="boxed-btn3-line" href="#">Ver Mas</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
                                 </div>
-                                <img v-bind:src="propiedad.imagen" alt="">
                             </div>
-                            <div class="property_content">
-                                <div class="main_pro">
-                                        <h3><a href="#">{{propiedad.direccion}}</a></h3>
-                                        <div class="mark_pro">
-                                            <img src="img/svg_icon/location.svg" alt="">
-                                            <span>{{propiedad.barrio}}</span>
-                                        </div>
-                                        <span class="amount">u$d {{propiedad.valor}}</span>
+
+                            <!-- <div class="single_details">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                            <div class="modern_home_info">
+                                                    <div class="modern_home_info_inner">
+                                                        <span class="for_sale">
+                                                            For Sale
+                                                        </span>
+                                                        <div class="info_header">
+                                                                <h3>Blue haven modern home</h3>
+                                                                <div class="popular_pro d-flex">
+                                                                    <img src="img/svg_icon/location.svg" alt="">
+                                                                    <span>Popular Properties</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="info_content">
+                                                            <ul>
+                                                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
+                                                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
+                                                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
+                                                            </ul>
+                                                            <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
+                                                            <div class="prise_view_details d-flex justify-content-between align-items-center">
+                                                                <span>$4567</span>
+                                                                <a class="boxed-btn3-line" href="#">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="footer_pro">
-                                    <ul>
-                                        <li>
-                                            <div class="single_info_doc">
-                                                <img src="img/svg_icon/square.svg" alt="">
-                                                <span>1200 Sqft</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="single_info_doc">
-                                                <img src="img/svg_icon/bed.svg" alt="">
-                                                <span>2 Bed</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="single_info_doc">
-                                                <img src="img/svg_icon/bath.svg" alt="">
-                                                <span>2 Bath</span>
-                                            </div>
-                                        </li>
-                                    </ul>
+
+                            <div class="single_details">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                            <div class="modern_home_info">
+                                                    <div class="modern_home_info_inner">
+                                                        <span class="for_sale">
+                                                            For Sale
+                                                        </span>
+                                                        <div class="info_header">
+                                                                <h3>Blue haven modern home</h3>
+                                                                <div class="popular_pro d-flex">
+                                                                    <img src="img/svg_icon/location.svg" alt="">
+                                                                    <span>Popular Properties</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="info_content">
+                                                            <ul>
+                                                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
+                                                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
+                                                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
+                                                            </ul>
+                                                            <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
+                                                            <div class="prise_view_details d-flex justify-content-between align-items-center">
+                                                                <span>$4567</span>
+                                                                <a class="boxed-btn3-line" href="#">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
                                 </div>
+                            </div>
+
+                            <div class="single_details">
+                                <div class="row">
+                                    <div class="col-xl-6 col-md-6">
+                                            <div class="modern_home_info">
+                                                    <div class="modern_home_info_inner">
+                                                        <span class="for_sale">
+                                                            For Sale
+                                                        </span>
+                                                        <div class="info_header">
+                                                                <h3>Blue haven modern home</h3>
+                                                                <div class="popular_pro d-flex">
+                                                                    <img src="img/svg_icon/location.svg" alt="">
+                                                                    <span>Popular Properties</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="info_content">
+                                                            <ul>
+                                                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
+                                                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
+                                                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
+                                                            </ul>
+                                                            <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
+                                                            <div class="prise_view_details d-flex justify-content-between align-items-center">
+                                                                <span>$4567</span>
+                                                                <a class="boxed-btn3-line" href="#">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="single_details">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                            <div class="modern_home_info">
+                                                    <div class="modern_home_info_inner">
+                                                        <span class="for_sale">
+                                                            For Sale
+                                                        </span>
+                                                        <div class="info_header">
+                                                                <h3>Blue haven modern home</h3>
+                                                                <div class="popular_pro d-flex">
+                                                                    <img src="img/svg_icon/location.svg" alt="">
+                                                                    <span>Popular Properties</span>
+                                                                </div>
+                                                        </div>
+                                                        <div class="info_content">
+                                                            <ul>
+                                                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
+                                                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
+                                                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
+                                                            </ul>
+                                                            <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
+                                                            <div class="prise_view_details d-flex justify-content-between align-items-center">
+                                                                <span>$4567</span>
+                                                                <a class="boxed-btn3-line" href="#">View Details</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
                         </div>
-                    </div>
 
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="more_property_btn text-center">
-                        <a href="#" class="boxed-btn3-line">Ver Mas</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- /home_details  -->
     </div>
-    <!-- /popular_property  -->
-    
-    <!-- home_details  -->
-    <div class="home_details">
-        <div class="container">
-            <div class="row">   
-                <div class="col-xl-12">
-                    <div class="home_details_active owl-carousel">
-
-                        <div class="single_details">
-                            <div class="row">
-                                <div class="col-xl-6 col-md-6">
-                                        <div class="modern_home_info">
-                                                <div class="modern_home_info_inner">
-                                                    <span class="for_sale">
-                                                        For Sale
-                                                    </span>
-                                                    <div class="info_header">
-                                                            <h3>Blue haven modern home</h3>
-                                                            <div class="popular_pro d-flex">
-                                                                <img src="img/svg_icon/location.svg" alt="">
-                                                                <span>Popular Properties</span>
-                                                            </div>
-                                                    </div>
-                                                    <div class="info_content">
-                                                        <ul>
-                                                            <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
-                                                            <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
-                                                            <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
-                                                        </ul>
-                                                        <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
-                                                        <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                                            <span>$4567</span>
-                                                            <a class="boxed-btn3-line" href="#">View Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_details">
-                            <div class="row">
-                                <div class="col-xl-6 col-md-6">
-                                        <div class="modern_home_info">
-                                                <div class="modern_home_info_inner">
-                                                    <span class="for_sale">
-                                                        For Sale
-                                                    </span>
-                                                    <div class="info_header">
-                                                            <h3>Blue haven modern home</h3>
-                                                            <div class="popular_pro d-flex">
-                                                                <img src="img/svg_icon/location.svg" alt="">
-                                                                <span>Popular Properties</span>
-                                                            </div>
-                                                    </div>
-                                                    <div class="info_content">
-                                                        <ul>
-                                                            <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
-                                                            <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
-                                                            <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
-                                                        </ul>
-                                                        <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
-                                                        <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                                            <span>$4567</span>
-                                                            <a class="boxed-btn3-line" href="#">View Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_details">
-                            <div class="row">
-                                <div class="col-xl-6 col-md-6">
-                                        <div class="modern_home_info">
-                                                <div class="modern_home_info_inner">
-                                                    <span class="for_sale">
-                                                        For Sale
-                                                    </span>
-                                                    <div class="info_header">
-                                                            <h3>Blue haven modern home</h3>
-                                                            <div class="popular_pro d-flex">
-                                                                <img src="img/svg_icon/location.svg" alt="">
-                                                                <span>Popular Properties</span>
-                                                            </div>
-                                                    </div>
-                                                    <div class="info_content">
-                                                        <ul>
-                                                            <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
-                                                            <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
-                                                            <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
-                                                        </ul>
-                                                        <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
-                                                        <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                                            <span>$4567</span>
-                                                            <a class="boxed-btn3-line" href="#">View Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_details">
-                            <div class="row">
-                                <div class="col-xl-6 col-md-6">
-                                        <div class="modern_home_info">
-                                                <div class="modern_home_info_inner">
-                                                    <span class="for_sale">
-                                                        For Sale
-                                                    </span>
-                                                    <div class="info_header">
-                                                            <h3>Blue haven modern home</h3>
-                                                            <div class="popular_pro d-flex">
-                                                                <img src="img/svg_icon/location.svg" alt="">
-                                                                <span>Popular Properties</span>
-                                                            </div>
-                                                    </div>
-                                                    <div class="info_content">
-                                                        <ul>
-                                                            <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
-                                                            <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
-                                                            <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
-                                                        </ul>
-                                                        <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
-                                                        <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                                            <span>$4567</span>
-                                                            <a class="boxed-btn3-line" href="#">View Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_details">
-                            <div class="row">
-                                <div class="col-xl-6">
-                                        <div class="modern_home_info">
-                                                <div class="modern_home_info_inner">
-                                                    <span class="for_sale">
-                                                        For Sale
-                                                    </span>
-                                                    <div class="info_header">
-                                                            <h3>Blue haven modern home</h3>
-                                                            <div class="popular_pro d-flex">
-                                                                <img src="img/svg_icon/location.svg" alt="">
-                                                                <span>Popular Properties</span>
-                                                            </div>
-                                                    </div>
-                                                    <div class="info_content">
-                                                        <ul>
-                                                            <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Sqft</span>  </li>
-                                                            <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Bed</span> </li>
-                                                            <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Bath</span> </li>
-                                                        </ul>
-                                                        <p>Esteem spirit temper too say adieus who direct esteem. It estee luckily or picture placing drawing. Apartments frequently or motionless on reasonable.</p>
-                                                        <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                                            <span>$4567</span>
-                                                            <a class="boxed-btn3-line" href="#">View Details</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /home_details  -->
-
+    <!-- /VUE JS APP -->
     
 
     <!-- contact_action_area  -->
@@ -364,7 +366,7 @@
                 <div class="col-xl-5">
                     <div class="call_add_action">
                         <span>+54 9 11 5843 0937</span>
-                        <a href="#" class="boxed-btn3-line">Quiero Vender</a>
+                        <a href="https://wa.me/5491158430937?text=Quiero%20vender%20mi%20propiedad" target="_blank" class="boxed-btn3-line">Quiero Vender</a>
                     </div>
                 </div>
             </div>
