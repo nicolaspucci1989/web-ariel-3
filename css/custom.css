@@ -37,3 +37,16 @@ body > div.slider_area > div > div > div > div > div.slider_text.text-center.jus
 .home_details {
     background-image: url('../img/home_details2.jpg');
 }
+
+/* Contacto */
+.bradcam_area {
+    padding: 180px 0 120px 0;
+}
+
+.contact-section {
+    padding: 50px 0 100px;
+}
+
+.bradcam_bg_1 {
+    background-image: url('../img/bradcam2.png');
+}
