@@ -9,9 +9,15 @@ fetch(`../js/propiedades.json`)
     const id = urlParams.get('id');
     propiedades = data;
     const propiedad = propiedades.find(prop => prop.id == id);
-    titulo = document.querySelector('#titulo');
 
+    // Get nodos por id
+    titulo = document.querySelector('#titulo');
+    direccion = document.querySelector('#direccion')
+
+    // Setear Texto
     titulo.innerText = `${propiedad.tipo} en ${propiedad.barrio}`;
+    direccion.innerText = propiedad.direccion;
+
   })
   .catch(err => console.log(err));
 
