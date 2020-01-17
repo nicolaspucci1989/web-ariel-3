@@ -12,12 +12,16 @@ fetch(`../js/propiedades.json`)
 
     // Get nodos por id
     titulo = document.querySelector('#titulo');
-    direccion = document.querySelector('#direccion')
+    direccion = document.querySelector('#direccion');
+    valor = document.querySelector('#valor');
 
     // Setear Texto
     titulo.innerText = `${propiedad.tipo} en ${propiedad.barrio}`;
     direccion.innerText = propiedad.direccion;
 
+    // Agregar info logos
+
+    valor.innerText = `u$d ${propiedad.valor}`;
   })
   .catch(err => console.log(err));
 
