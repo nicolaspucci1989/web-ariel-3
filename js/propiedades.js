@@ -14,6 +14,7 @@ fetch(`../js/propiedades.json`)
     titulo = document.querySelector('#titulo');
     direccion = document.querySelector('#direccion');
     valor = document.querySelector('#valor');
+    descripcion = document.querySelector('#descripcion');
 
     // Setear Texto
     titulo.innerText = `${propiedad.tipo} en ${propiedad.barrio}`;
@@ -22,6 +23,7 @@ fetch(`../js/propiedades.json`)
     // Agregar info logos
 
     valor.innerText = `u$d ${propiedad.valor}`;
+    descripcion.innerText = propiedad.descripcion;
   })
   .catch(err => console.log(err));
 
