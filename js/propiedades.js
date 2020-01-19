@@ -1,5 +1,3 @@
-
-
 fetch(`../js/propiedades.json`)
   .then(res => res.json())
   .then(function(data){
