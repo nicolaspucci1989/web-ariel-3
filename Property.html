@@ -148,62 +148,67 @@
         </div>
     </div>
     <!-- slider_area_end -->
+
     <div id="app" class="popular_property plus_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-40 text-center">
-                        <h4>{{cantidadProp}} Propiedades encontradas</h4>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="section_title mb-40 text-center">
+              <h4>{{cantidadProp}} Propiedades encontradas</h4>
             </div>
-            <div class="row">
-
-                <div class="col-xl-4 col-md-6 col-lg-4" v-for="propiedad in propiedades">
-                    <div class="single_property">
-                        <div class="property_thumb">
-                            <div class="property_tag">
-                                    En Venta
-                            </div>
-                            <img v-bind:src="propiedad.imagen" alt="">
-                        </div>
-                        <div class="property_content">
-                            <div class="main_pro">
-                                    <h3><a href="#">{{propiedad.direccion}}</a></h3>
-                                    <div class="mark_pro">
-                                        <img src="img/svg_icon/location.svg" alt="">
-                                        <span>{{propiedad.barrio}}</span>
-                                    </div>
-                                    <span class="amount">u$d {{propiedad.valor}}</span>
-                            </div>
-                        </div>
-                        <div class="footer_pro">
-                                <ul>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/square.svg" alt="">
-                                            <span>1200 Mts2</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bed.svg" alt="">
-                                            <span>2 Amb</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="single_info_doc">
-                                            <img src="img/svg_icon/bath.svg" alt="">
-                                            <span>2 Baños</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-xl-4 col-md-6 col-lg-4" v-for="propiedad in propiedades">
+            <a v-bind:href="'property_details.html?id=' + propiedad.id">
+              <div class="single_property">
+                <div class="property_thumb">
+                  <div class="property_tag">
+                    En Venta
+                  </div>
+                <img v-bind:src="propiedad.imagen" alt="">
+                </div>
+                <div class="property_content">
+                  <div class="main_pro">
+                    <h3><a href="#">{{propiedad.direccion}}</a></h3>
+                    <div class="mark_pro">
+                      <img src="img/svg_icon/location.svg" alt="">
+                      <span>{{propiedad.barrio}}</span>
+                    </div>
+                    <span class="amount">u$d {{propiedad.valor}}</span>
+                  </div>
+                </div>
+                <div class="footer_pro">
+                  <ul>
+                    <li>
+                      <div class="single_info_doc">
+                        <img src="img/svg_icon/square.svg" alt="">
+                        <span>1200 Mts2</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="single_info_doc">
+                        <img src="img/svg_icon/bed.svg" alt="">
+                        <span>2 Amb</span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="single_info_doc">
+                        <img src="img/svg_icon/bath.svg" alt="">
+                        <span>2 Baños</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </a>
+
+
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <!-- contact_action_area  -->
