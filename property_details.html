@@ -79,102 +79,99 @@
   </header>
   <!-- header-end -->
 
-  <!-- bradcam_area  -->
-  <div class="property_details_banner">
-          <div class="container">
-                  <div class="row">
-                      <div class="col-xl-6 col-md-8 col-lg-6">
-                          <div class="comfortable_apartment">
-                              <h4 id="titulo" ></h4>
-                              <p id="direccion"> <img src="img/svg_icon/location.svg" alt=""></p>
-                              <div class="quality_quantity d-flex">
-                                  <div class="single_quantity">
-                                      <img src="img/svg_icon/color_box.svg" alt="">
-                                      <span>1200 mts2</span>
-                                  </div>
-                                  <div class="single_quantity">
-                                      <img src="img/svg_icon/color_bed.svg" alt="">
-                                      <span>2 Amb</span>
-                                  </div>
-                                  <div class="single_quantity">
-                                      <img src="img/svg_icon/color_bath.svg" alt="">
-                                      <span>2 Bañ</span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-xl-6 col-md-4 col-lg-6">
-                          <div class="prise_quantity">
-                              <h4 id="valor"></h4>
-                              <a href="#">+54 9 11 5843 0937</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-  </div>
-  <!--/ bradcam_area  -->
+  <div id="app">
+    <!-- bradcam_area  -->
+    <div class="property_details_banner">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-8 col-lg-6">
+                            <div class="comfortable_apartment">
+                                <h4 id="titulo">{{propiedad.tipo}} en {{propiedad.barrio}}</h4>
+                                <p id="direccion"><img src="img/svg_icon/location.svg" alt="">{{propiedad.direccion}}</p>
+                                <div class="quality_quantity d-flex">
+                                    <div class="single_quantity">
+                                        <img src="img/svg_icon/color_box.svg" alt="">
+                                        <span>1200 mts2</span>
+                                    </div>
+                                    <div class="single_quantity">
+                                        <img src="img/svg_icon/color_bed.svg" alt="">
+                                        <span>2 Amb</span>
+                                    </div>
+                                    <div class="single_quantity">
+                                        <img src="img/svg_icon/color_bath.svg" alt="">
+                                        <span>2 Bañ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-4 col-lg-6">
+                            <div class="prise_quantity">
+                                <h4 id="valor"></h4>
+                                <a href="#">+54 9 11 5843 0937</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <!--/ bradcam_area  -->
 
-  <!-- details  -->
-  <div class="property_details">
-      <div class="container">
-          <div class="row">
-              <div class="col-xl-12">
-                  <div class="property_banner">
-                      <div class="property_banner_active owl-carousel">
-                          <div class="single_property">
-                              <img src="img/banner/property_details.png" alt="">
-                          </div>
-                          <div class="single_property">
-                              <img src="img/banner/property_details.png" alt="">
-                          </div>
-                          <div class="single_property">
-                              <img src="img/banner/property_details.png" alt="">
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                  <div class="details_info">
-                      <h4>Descripci&oacuten</h4>
-                      <p id="descripcion"></p>
+    <!-- details  -->
+    
+    <div class="property_details">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="property_banner">
+                        <div id="owl-carousel" class="property_banner_active owl-carousel">
+                            <div class="single_property" v-for="imagen in propiedad.carousel">
+                                <img v-bind:src="imagen" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+                    <div class="details_info">
+                        <h4>Descripci&oacuten</h4>
+                        <p id="descripcion">{{propiedad.descripcion}}</p>
 
-                  </div>
-                  <section class="contact-section">
-                          <div class="d-none d-sm-block">
-                                  
-                                  
-                  
-                              </div>
-                      </section>
-                  <div class="contact_field">
-                      <h3>Contacto</h3>
-                      <form action="#">
-                              <div class="row">
-                                      <div class="col-xl-6 col-md-6">
-                                          <input type="text" placeholder="Nombre" >
-                                      </div>
-                                      <div class="col-xl-6 col-md-6">
-                                          <input type="email" placeholder="Email" >
-                                      </div>
-                                      <div class="col-xl-12">
-                                          <input type="number" placeholder="Telefono" >
-                                      </div>
-                                      <div class="col-xl-12">
-                                          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" ></textarea>
-                                      </div>
-                                      <div class="col-xl-12">
-                                          <div class="send_btn">
-                                              <button type="submit" class="send_btn">enviar</button>
-                                          </div>
-                                      </div>
-                                  </div>
-                      </form>
-                  </div>
-              </div>
-          </div>
-      </div>
+                    </div>
+                    <section class="contact-section">
+                            <div class="d-none d-sm-block">
+                                    
+                                    
+                    
+                            </div>
+                        </section>
+                    <div class="contact_field">
+                        <h3>Contacto</h3>
+                        <form action="#">
+                                <div class="row">
+                                        <div class="col-xl-6 col-md-6">
+                                            <input type="text" placeholder="Nombre" >
+                                        </div>
+                                        <div class="col-xl-6 col-md-6">
+                                            <input type="email" placeholder="Email" >
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <input type="number" placeholder="Telefono" >
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" ></textarea>
+                                        </div>
+                                        <div class="col-xl-12">
+                                            <div class="send_btn">
+                                                <button type="submit" class="send_btn">enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /details  -->
   </div>
-  <!-- /details  -->
 
   <!-- contact_action_area  -->
   <div class="contact_action_area">
@@ -312,9 +309,33 @@
   <script src="js/mail-script.js"></script>
 
 
+
+  <!-- development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/listado-propiedades.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        propiedades: propiedades,
+      },
+      method: {
+        getId: function() {
+          return new URLSearchParams(window.location.search()).get('id')
+        }
+      },
+      computed: {
+        propiedad: function(){
+          const id = new URLSearchParams(window.location.search).get('id');
+          return this.propiedades.find(prop => prop.id == id);
+        }
+      }
+    })
+  </script>
+
   <script src="js/main.js"></script>
 
-  <script src="js/propiedades.js"></script>
+
 </body>
 
 </html>
