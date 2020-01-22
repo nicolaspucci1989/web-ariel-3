@@ -50,3 +50,35 @@ body > div.slider_area > div > div > div > div > div.slider_text.text-center.jus
 .bradcam_bg_1 {
     background-image: url('../img/bradcam2.png');
 }
+
+.carousel-botonera {
+  margin: auto;
+}
+
+.carousel-botonera img {
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  object-fit: cover;
+  width: 260px; 
+  height: 180px;
+
+}
+  
+.card-botonera {
+  text-align: center;
+  padding: 0 5px;
+}
+
+.card-texto {
+  overflow: hidden;
+}
+
+.card-texto h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  background-color: #fff;
+}
+
+.card-texto h1:hover {
+  background-color: aqua;
+}

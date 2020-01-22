@@ -71,35 +71,35 @@ autoplaySpeed: 800,
 $('.testmonial_active').owlCarousel({
   loop:true,
   margin:0,
-items:1,
-autoplay:true,
-navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+  items:1,
+  autoplay:true,
+  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
   nav:true,
-dots:false,
-autoplayHoverPause: true,
-autoplaySpeed: 800,
+  dots:false,
+  autoplayHoverPause: true,
+  autoplaySpeed: 800,
   responsive:{
-      0:{
-          items:1,
-          dots:false,
-          nav:false,
-      },
-      767:{
-          items:1,
-          dots:false,
-          nav:false,
-      },
-      992:{
-          items:1,
-          nav:false
-      },
-      1200:{
-          items:1,
-          nav:false
-      },
-      1500:{
-          items:1
-      }
+    0:{
+      items:1,
+      dots:false,
+      nav:false,
+    },
+    767:{
+      items:1,
+      dots:false,
+      nav:false,
+    },
+    992:{
+      items:1,
+      nav:false
+    },
+    1200:{
+      items:1,
+      nav:false
+    },
+    1500:{
+      items:1
+    }
   }
 });
 
@@ -180,35 +180,56 @@ center: false,
 $('.property_banner_active').owlCarousel({
   loop:true,
   margin:30,
-items:1,
-autoplay:false,
-navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
-  nav:true,
-dots:true,
-autoplayHoverPause: true,
-autoplaySpeed: 800,
-// dotsData: true,
-center: false,
-  responsive:{
-      0:{
-          items:1,
-          nav:false
+  items:1,
+  autoplay:false,
+  navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+    nav:true,
+  dots:true,
+  autoplayHoverPause: true,
+  autoplaySpeed: 800,
+  // dotsData: true,
+  center: false,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        767:{
+            items:1,
+            nav:false
+        },
+        992:{
+            items:1
+        },
+        1200:{
+            items:1
+        },
+        1500:{
+            items:1,
+            nav:true
+        }
+    }
+});
+
+// Home Carousel Botonera
+$(document).ready(function(){
+  $(".carousel-botonera").owlCarousel({
+    margin: 5,
+    responsive: {
+      0: {
+        items: 1
       },
-      767:{
-          items:1,
-          nav:false
+      370: {
+        items: 2
       },
-      992:{
-          items:1
+      600: {
+        items: 3
       },
-      1200:{
-          items:1
-      },
-      1500:{
-          items:1,
-          nav:true
+      1000: {
+        items: 4
       }
-  }
+    }
+  });
 });
 
 // for filter

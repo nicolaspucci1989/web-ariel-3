@@ -85,95 +85,124 @@
 
     <!-- slider_area_start -->
     <div class="slider_area">
-            <div class="single_slider  d-flex align-items-center slider_bg_1">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-xl-10 offset-xl-1">
-                                <div class="slider_text text-center justify-content-center">
-                                    <h3>Encontr&aacute tu Lugar en el Mundo</h3>
-                                    <a id="whatsapp" href="https://wa.me/5491158430937?text=Quiero%20comprar%20una%20propiedad" target="_blank"><i class="fab fa-whatsapp fa-md"></i> <span>Cont&aacutectenos</span></a>
-                                </div>
-                                <div class="col-xl-10 offset-xl-1">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    </div>
-    <!-- slider_area_end -->
-
-        <!-- popular_property  -->
-        <div class="popular_property">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="section_title mb-40 text-center">
-                            <h3>Propiedades</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="row-propiedad" class="row">
-
-                 
-                </div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="more_property_btn text-center">
-                            <a href="Property.html" class="boxed-btn3-line">Ver Mas</a>
-                        </div>
-                    </div>
-                </div>
+      <div class="single_slider d-flex align-items-center slider_bg_1">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-10 offset-xl-1">
+              <div class="slider_text text-center justify-content-center">
+                  <h3>Encontr&aacute tu Lugar en el Mundo</h3>
+                  <a id="whatsapp" href="https://wa.me/5491158430937?text=Quiero%20comprar%20una%20propiedad" target="_blank"><i class="fab fa-whatsapp fa-md"></i> <span>Cont&aacutectenos</span></a>
+              </div>
+              <div class="col-xl-10 offset-xl-1">
+              </div>
             </div>
-        </div>
-        <!-- /popular_property  -->
-        
-        <!-- home_details  -->
-        <div class="home_details">
-          <div class="container">
-            <div class="row">   
-              <div class="col-xl-12">
-                <div id="app" class="home_details_active owl-carousel">
-
-                  <div class="single_details" v-for="propiedad in propiedades">
-                    <div class="row">
-                      <div class="col-xl-6 col-md-6">
-                        <div class="modern_home_info">
-                          <div class="modern_home_info_inner">
-                            <span class="for_sale">
-                                En Venta
-                            </span>
-                            <div class="info_header">
-                              <h3>{{propiedad.tipo}} en {{propiedad.barrio}}</h3>
-                              <div class="popular_pro d-flex">
-                                  <img src="img/svg_icon/location.svg" alt="">
-                                  <span>{{propiedad.direccion}}</span>
-                              </div>
-                            </div>
-                            <div class="info_content">
-                              <ul>
-                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Mts2</span>  </li>
-                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Amb</span> </li>
-                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Baños</span> </li>
-                              </ul>
-                              <p>{{propiedad.descripcion}}</p>
-                              <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                <span>u$d {{propiedad.valor}}</span>
-                                <a class="boxed-btn3-line" href="#">Ver Mas</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                    
+            <!-- Carousel Botonera -->
+            <div class="carousel-botonera owl-carousel">
+              <div class="card-botonera">
+                <img src="img/botonera/tasaciones.jpg" alt="">
+                <div class="card-texto">
+                  <h1>Tasaciones</h1>
+                </div>
+              </div>
+              <div class="card-botonera">
+                <img src="img/botonera/comprar.jpg" alt="">
+                <div class="card-texto">
+                  <h1>Comprar</h1>
+                </div>
+              </div>
+              <div class="card-botonera">
+                <img src="img/botonera/emprendimientos.jpg" alt="">
+                <div class="card-texto">
+                  <h1>Emprendimientos</h1>
+                </div>
+              </div>
+              <div class="card-botonera">
+                <img src="img/botonera/alquilar.jpg" alt="">
+                <div class="card-texto">
+                  <h1>Alquilar</h1>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- /home_details  -->
+      
+        
+      </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- popular_property  -->
+    <div class="popular_property">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-40 text-center">
+                        <h3>Propiedades</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="row-propiedad" class="row">
+
+              
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="more_property_btn text-center">
+                        <a href="Property.html" class="boxed-btn3-line">Ver Mas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /popular_property  -->
+    
+    <!-- home_details  -->
+    <div class="home_details">
+      <div class="container">
+        <div class="row">   
+          <div class="col-xl-12">
+            <div id="app" class="home_details_active owl-carousel">
+
+              <div class="single_details" v-for="propiedad in propiedades">
+                <div class="row">
+                  <div class="col-xl-6 col-md-6">
+                    <div class="modern_home_info">
+                      <div class="modern_home_info_inner">
+                        <span class="for_sale">
+                            En Venta
+                        </span>
+                        <div class="info_header">
+                          <h3>{{propiedad.tipo}} en {{propiedad.barrio}}</h3>
+                          <div class="popular_pro d-flex">
+                              <img src="img/svg_icon/location.svg" alt="">
+                              <span>{{propiedad.direccion}}</span>
+                          </div>
+                        </div>
+                        <div class="info_content">
+                          <ul>
+                            <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Mts2</span>  </li>
+                            <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Amb</span> </li>
+                            <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Baños</span> </li>
+                          </ul>
+                          <p>{{propiedad.descripcion}}</p>
+                          <div class="prise_view_details d-flex justify-content-between align-items-center">
+                            <span>u$d {{propiedad.valor}}</span>
+                            <a class="boxed-btn3-line" href="#">Ver Mas</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /home_details  -->
     
 
     <!-- contact_action_area  -->
@@ -384,6 +413,8 @@
 
         $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + $('#slider').slider('values', 1) +
             'k</span>');
+
+      
     </script>
 
     <!-- VUE JS -->
