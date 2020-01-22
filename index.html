@@ -130,49 +130,48 @@
         
         <!-- home_details  -->
         <div class="home_details">
-            <div class="container">
-                <div class="row">   
-                    <div class="col-xl-12">
-                        <div id="app" class="home_details_active owl-carousel">
+          <div class="container">
+            <div class="row">   
+              <div class="col-xl-12">
+                <div id="app" class="home_details_active owl-carousel">
 
-                          <div class="single_details" v-for="propiedad in propiedades">
-                              <div class="row">
-                                  <div class="col-xl-6 col-md-6">
-                                          <div class="modern_home_info">
-                                                  <div class="modern_home_info_inner">
-                                                      <span class="for_sale">
-                                                          En Venta
-                                                      </span>
-                                                      <div class="info_header">
-                                                              <h3>{{propiedad.tipo}} en {{propiedad.barrio}}</h3>
-                                                              <div class="popular_pro d-flex">
-                                                                  <img src="img/svg_icon/location.svg" alt="">
-                                                                  <span>{{propiedad.direccion}}</span>
-                                                              </div>
-                                                      </div>
-                                                      <div class="info_content">
-                                                          <ul>
-                                                              <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Mts2</span>  </li>
-                                                              <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Amb</span> </li>
-                                                              <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Baños</span> </li>
-                                                          </ul>
-                                                          <p>{{propiedad.descripcion}}</p>
-                                                          <div class="prise_view_details d-flex justify-content-between align-items-center">
-                                                              <span>u$d {{propiedad.valor}}</span>
-                                                              <a class="boxed-btn3-line" href="#">Ver Mas</a>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                  </div>
+                  <div class="single_details" v-for="propiedad in propiedades">
+                    <div class="row">
+                      <div class="col-xl-6 col-md-6">
+                        <div class="modern_home_info">
+                          <div class="modern_home_info_inner">
+                            <span class="for_sale">
+                                En Venta
+                            </span>
+                            <div class="info_header">
+                              <h3>{{propiedad.tipo}} en {{propiedad.barrio}}</h3>
+                              <div class="popular_pro d-flex">
+                                  <img src="img/svg_icon/location.svg" alt="">
+                                  <span>{{propiedad.direccion}}</span>
                               </div>
+                            </div>
+                            <div class="info_content">
+                              <ul>
+                                <li> <img src="img/svg_icon/square.svg" alt=""> <span>1200 Mts2</span>  </li>
+                                <li> <img src="img/svg_icon/bed.svg" alt=""> <span>2 Amb</span> </li>
+                                <li> <img src="img/svg_icon/bath.svg" alt=""> <span>2 Baños</span> </li>
+                              </ul>
+                              <p>{{propiedad.descripcion}}</p>
+                              <div class="prise_view_details d-flex justify-content-between align-items-center">
+                                <span>u$d {{propiedad.valor}}</span>
+                                <a class="boxed-btn3-line" href="#">Ver Mas</a>
+                              </div>
+                            </div>
                           </div>
-                            
                         </div>
-
+                      </div>
                     </div>
+                  </div>
+                    
                 </div>
+              </div>
             </div>
+          </div>
         </div>
         <!-- /home_details  -->
     
