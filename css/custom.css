@@ -71,12 +71,15 @@ body > div.slider_area > div > div > div > div > div.slider_text.text-center.jus
 
 .card-texto {
   overflow: hidden;
+  border-radius: 0 0 10px 10px;
 }
 
 .card-texto h1 {
   font-size: 1.2rem;
   margin: 0;
-  background-color: #fff;
+  padding: 5px;
+  background-color: #FDAE5C;
+  color: #fff;
 }
 
 .card-texto h1:hover {

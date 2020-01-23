@@ -215,6 +215,7 @@ $('.property_banner_active').owlCarousel({
 $(document).ready(function(){
   $(".carousel-botonera").owlCarousel({
     margin: 5,
+    
     responsive: {
       0: {
         items: 1
