@@ -176,7 +176,7 @@ center: false,
   }
 });
 
-// review-active
+// review-active property_details.html
 $('.property_banner_active').owlCarousel({
   loop:true,
   margin:30,
